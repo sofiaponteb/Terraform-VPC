@@ -14,14 +14,3 @@ variable "resource_group_name" {
 variable "unique_id" {
   description = "The vpc unique id"
 }
-
-##############################################################################
-# Network variables
-##############################################################################
-
-variable "frontend_cidr_blocks" {
-}
-
-variable "backend_cidr_blocks" {
-}
-##############################################################################
