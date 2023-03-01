@@ -18,7 +18,7 @@ variable "resource_group_name" {
 # unique name for the VPC in the account 
 variable "vpc_name" {
   description = "Name of vpc"
-  default     = "vpc-host"
+  default     = "vpc-demo"
 }
 
 ##############################################################################
