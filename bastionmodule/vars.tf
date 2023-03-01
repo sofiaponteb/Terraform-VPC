@@ -75,12 +75,6 @@ variable "destination_cidr_blocks" {
   default     = []
 }
 
-# remote security groups bastion will egress to (frontend, backend)
-variable "destination_sgs" {
-  description = "Destination Security Groups in VPC"
-  default     = []
-}
-
 # Allow user to pass in additional rules e.g. icmp
 variable "extrarules" {
   description = "Additional rules supplied by user"

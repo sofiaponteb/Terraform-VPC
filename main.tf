@@ -58,10 +58,6 @@ module "bastion" {
   bastion_cidr             = var.bastion_cidr
   ssh_source_cidr_blocks   = local.bastion_ingress_cidr
   destination_cidr_blocks  = [var.frontend_cidr, var.backend_cidr]
-  destination_sgs          = [module.frontend.security_group_id, module.backend.security_group_id]
-  # destination_sg          = [module.frontend.security_group_id, module.backend.security_group_id]
-  # vsi_profile             = "cx2-2x4"
-  # image_name              = "ibm-centos-7-6-minimal-amd64-1"
   ssh_key_id = data.ibm_is_ssh_key.sshkey.id
 
 }
