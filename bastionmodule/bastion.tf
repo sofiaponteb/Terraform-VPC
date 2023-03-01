@@ -17,7 +17,6 @@ resource "ibm_is_instance" "bastion" {
 
   primary_network_interface {
     subnet          = ibm_is_subnet.bastion_subnet[count.index].id
-    security_groups = [ibm_is_security_group.bastion.id]
   }
 
   timeouts {
